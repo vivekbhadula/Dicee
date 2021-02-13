@@ -9,10 +9,16 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+// control and drag to make IB outlet
+    @IBOutlet weak var diceImageView1: UIImageView!
+    @IBOutlet weak var diceImageView2: UIImageView!
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        // WHO.WHAT=VALUE
+        diceImageView1.image = #imageLiteral(resourceName: "DiceSix")
+        // image literal to get this image after =
+        // alpha for transparency
+        diceImageView2.image = #imageLiteral(resourceName: "DiceTwo")
     }
 
 
